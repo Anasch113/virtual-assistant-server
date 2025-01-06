@@ -36,7 +36,7 @@ app.post("/", async (req, res) => {
                     },
                     {
                         role: 'user',
-                        content: "You are a helpfull assistant that will chat with users and reply to them."
+                        content: req.body.input
                     }
                 ],
                 temperature: 0.9,
